@@ -29,9 +29,3 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-
-@media (max-width: 767px) {
-  body {
-    background-size: auto;
-  }
-}
