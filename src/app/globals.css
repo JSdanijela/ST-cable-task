@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #333333;
+  --color-badge-bg: #bfdbfe;
+  --color-badge-text: #172554;
+  --color-badge-border: #172554;
+  --font-sans: var(--font-inter), "Intel Clear", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), "Intel Clear", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../assets/footer-image.png");
+  background-position: center bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-size: auto;
+  }
+}
