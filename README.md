@@ -1,22 +1,24 @@
 #### 1. Styling & Framework Choice (Tailwind CSS)
 
-- Although the task didn't explicitly mandate a specific CSS framework, I observed Tailwind CSS references within the Figma design (tokens/utility naming). I chose to use Tailwind to ensure the implementation is as close to the design specifications as possible and to maintain consistency with the provided layout.
+Although the task didn't explicitly mandate a specific CSS framework, I observed Tailwind CSS references within the Figma design (tokens/utility naming). I chose to use Tailwind to ensure the implementation is as close to the design specifications as possible and to maintain consistency with the provided layout.
 
 #### 2. UI Constraints & Tag Logic
 
-- While the API provides a large number of tags, the display is limited to two rows as per the design mockup. This prevents layout overflow and maintains the intended visual balance.
+While the API provides a large number of tags, the display is limited to two rows as per the design mockup. This prevents layout overflow and maintains the intended visual balance.
 
 #### 3. Data Processing
 
-- Used the he library to decode HTML entities from the API strings (e.g., converting &amp; to &), ensuring all text is human-readable and clean.
+Used the he library to decode HTML entities from the API strings (e.g., converting &amp; to &), ensuring all text is human-readable and clean.
 
 #### 4. API Configuration
 
-- While I typically use environment variables for API URLs, I kept the URL in the code for this specific case. Since it is a public API with no sensitive keys, this makes the project "plug-and-play" for reviewers without needing extra .env setup.
+While I typically use environment variables for API URLs, I kept the URL in the code for this specific case. Since it is a public API with no sensitive keys, this makes the project "plug-and-play" for reviewers without needing extra .env setup.
+
+  ![Alt text for the GIF](https://global.discourse-cdn.com/choiceofgames/original/3X/b/2/b22045744d0de4e719c5ce2ca5566ce60dced6c7.gif)
+
+  ## INSTRUCTIONS
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
 
 First, run the development server:
 
@@ -33,8 +35,6 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
