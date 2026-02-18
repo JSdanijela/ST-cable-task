@@ -1,3 +1,19 @@
+#### 1. Styling & Framework Choice (Tailwind CSS)
+
+- Although the task didn't explicitly mandate a specific CSS framework, I observed Tailwind CSS references within the Figma design (tokens/utility naming). I chose to use Tailwind to ensure the implementation is as close to the design specifications as possible and to maintain consistency with the provided layout.
+
+#### 2. UI Constraints & Tag Logic
+
+- While the API provides a large number of tags, the display is limited to two rows as per the design mockup. This prevents layout overflow and maintains the intended visual balance.
+
+#### 3. Data Processing
+
+- Used the he library to decode HTML entities from the API strings (e.g., converting &amp; to &), ensuring all text is human-readable and clean.
+
+#### 4. API Configuration
+
+- While I typically use environment variables for API URLs, I kept the URL in the code for this specific case. Since it is a public API with no sensitive keys, this makes the project "plug-and-play" for reviewers without needing extra .env setup.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
