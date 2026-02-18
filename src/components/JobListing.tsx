@@ -148,10 +148,14 @@ export default function JobListing({
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 max-w-[1280px]">
             <div className="flex flex-col md:flex-row gap-6">
               <div className="flex flex-col gap-2.5 min-w-[240px]">
-                <label className="text-[12px] font-normal text-gray-600">
+                <label
+                  htmlFor="location"
+                  className="text-[12px] font-normal text-gray-600"
+                >
                   Company location:
                 </label>
                 <select
+                  id="location"
                   className="w-full h-[36px] appearance-none bg-white border border-gray-200 rounded-xl px-2 text-sm font-medium text-gray-900 cursor-pointer"
                   value={jobGeo}
                   onChange={(e) => setJobGeo(e.target.value)}
@@ -168,10 +172,14 @@ export default function JobListing({
               </div>
 
               <div className="flex flex-col gap-2.5 min-w-[240px]">
-                <label className="text-[12px] font-normal text-gray-600">
+                <label
+                  htmlFor="industry"
+                  className="text-[12px] font-normal text-gray-600"
+                >
                   Industries:
                 </label>
                 <select
+                  id="industry"
                   className="w-full h-[36px] appearance-none bg-white border border-gray-200 rounded-xl px-2 text-sm font-medium text-gray-900 cursor-pointer"
                   value={industry}
                   onChange={(e) => setIndustry(e.target.value)}
