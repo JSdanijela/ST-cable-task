@@ -165,7 +165,7 @@ export default function JobCard({
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            inline-flex items-center justify-center w-[296px] h-10 py-2 px-6 rounded-md md:w-auto md:h-11 md:px-8 md:rounded-xl font-semibold text-sm transition-all gap-2 whitespace-nowrap
+            inline-flex items-center justify-center w-[296px] h-10 py-2 px-6  md:w-auto md:h-11 md:px-8 rounded-lg font-semibold text-sm transition-all gap-2 whitespace-nowrap
             ${
               isHighlighted
                 ? "bg-white text-blue-600 hover:bg-gray-50"
